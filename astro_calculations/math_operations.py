@@ -1,4 +1,6 @@
-def add(a, b):
+from .printing import print_details
+
+def add(a, b, debug = False):
     """Add two numbers together
 
     Args:
@@ -8,9 +10,11 @@ def add(a, b):
     Returns:
         a + b
     """
+    if debug:
+        print_details(a,b)
     return a + b
 
-def sub(a, b):
+def sub(a, b, debug = False):
     """Subtract two numbers together
 
     Args:
@@ -20,9 +24,11 @@ def sub(a, b):
     Returns:
         a - b
     """
+    if debug:
+        print_details(a,b)
     return a - b
 
-def mult(a, b):
+def mult(a, b, debug = False):
     """Multiply two numbers together
 
     Args:
@@ -32,9 +38,11 @@ def mult(a, b):
     Returns:
         a * b
     """
+    if debug:
+        print_details(a,b)
     return a * b
 
-def div(a, b):
+def div(a, b, debug = False):
     """Divide one number by another
 
     Args:
@@ -44,4 +52,6 @@ def div(a, b):
     Returns:
         a / b
     """
+    if debug:
+        print_details(a,b)
     return a / b
