@@ -1,3 +1,3 @@
-from .math_operations import add, subtraction, div, mult
+from .math_operations import add, sub, div, mult
 
-__all__ = ["add", "subtraction", "div", "mult"]
+__all__ = ["add", "sub", "div", "mult"]
