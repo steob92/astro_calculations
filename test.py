@@ -1,4 +1,4 @@
-from astro_calculations.math_operations import add
+from astro_calculations import add
 
 x = 1.2
 y = 2.1
