@@ -1,3 +1,5 @@
+from .printing import print_details
+
 def add(a, b):
     """Add two numbers together
 
@@ -8,6 +10,7 @@ def add(a, b):
     Returns:
         a + b
     """
+    print_details(a,b)
     return a + b
 
 def sub(a, b):
@@ -20,6 +23,7 @@ def sub(a, b):
     Returns:
         a - b
     """
+    print_details(a,b)
     return a - b
 
 def mult(a, b):
@@ -32,6 +36,7 @@ def mult(a, b):
     Returns:
         a * b
     """
+    print_details(a,b)
     return a * b
 
 def div(a, b):
@@ -44,4 +49,5 @@ def div(a, b):
     Returns:
         a / b
     """
+    print_details(a,b)
     return a / b
