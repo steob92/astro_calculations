@@ -1,13 +1,17 @@
 from .printing import print_details
 import numpy as np
+from typing import Union, Optional
 
 
-def add(a, b, debug=False):
+def add(
+    a: Union[float, int], b: Union[float, int], debug: Optional[bool] = False
+) -> Union[float, int]:
     """Add two numbers together
 
     Args:
-        a : input value, float or int
-        b : input value, float or int
+        a float,int : input value
+        b float,int : input value
+        debug bool : whether or not to print debug info. defaults to false
 
     Returns:
         a + b
@@ -17,12 +21,16 @@ def add(a, b, debug=False):
     return a + b
 
 
-def sub(a, b, debug=False):
+def sub(
+    a: Union[float, int], b: Union[float, int], debug: Optional[bool] = False
+) -> Union[float, int]:
     """Subtract two numbers together
 
     Args:
-        a : input value, float or int
-        b : input value, float or int
+        a float,int : input value
+        b float,int : input value
+        debug bool : whether or not to print debug info. defaults to false
+
 
     Returns:
         a - b
@@ -32,12 +40,16 @@ def sub(a, b, debug=False):
     return a - b
 
 
-def mult(a, b, debug=False):
+def mult(
+    a: Union[float, int], b: Union[float, int], debug: Optional[bool] = False
+) -> Union[float, int]:
     """Multiply two numbers together
 
     Args:
-        a : input value, float or int
-        b : input value, float or int
+        a float,int : input value
+        b float,int : input value
+        debug bool : whether or not to print debug info. defaults to false
+
 
     Returns:
         a * b
@@ -47,12 +59,16 @@ def mult(a, b, debug=False):
     return a * b
 
 
-def div(a, b, debug=False):
+def div(
+    a: Union[float, int], b: Union[float, int], debug: Optional[bool] = False
+) -> Union[float, int]:
     """Divide one number by another
 
     Args:
-        a : input value, float or int
-        b : input value, float or int
+        a float,int : input value
+        b float,int : input value
+        debug bool : whether or not to print debug info. defaults to false
+
 
     Returns:
         a / b
@@ -63,11 +79,13 @@ def div(a, b, debug=False):
 
 
 @np.vectorize
-def capped_sqrt(a, debug=False):
+def capped_sqrt(a: Union[int, float], debug=False) -> Union[float, int]:
     """Get the sqrt of a number if it is greater than 0
 
     Args:
-        a : input value, float or int
+        a float,int : input value
+        debug bool : whether or not to print debug info. defaults to false
+
 
     Returns:
         sqrt(a) if a > 0 otherwise 0
