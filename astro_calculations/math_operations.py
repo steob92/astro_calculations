@@ -1,4 +1,5 @@
 from .printing import print_details
+import numpy as np
 
 def add(a, b, debug = False):
     """Add two numbers together
@@ -55,3 +56,17 @@ def div(a, b, debug = False):
     if debug:
         print_details(a,b)
     return a / b
+
+
+def capped_sqrt(a, debug = False):
+    """Get the sqrt of a number if it is greater than 0
+
+    Args:
+        a : input value, float or int
+        
+    Returns:
+        sqrt(a) if a > 0 otherwise 0 
+    """
+    if a > 0:
+        return np.sqrt(a)
+    return 0
