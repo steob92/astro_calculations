@@ -1,3 +1,3 @@
 # astro_calculations
 
-A small package for big calulcations. Optimistic... I know
+A small package for big calulcations. Optimistic... I know, but achievable
