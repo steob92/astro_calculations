@@ -57,8 +57,8 @@ def div(a, b, debug = False):
         print_details(a,b)
     return a / b
 
-
-def _capped_sqrt(a, debug = False):
+@np.vectorize
+def capped_sqrt(a, debug = False):
     """Get the sqrt of a number if it is greater than 0
 
     Args:
@@ -67,9 +67,8 @@ def _capped_sqrt(a, debug = False):
     Returns:
         sqrt(a) if a > 0 otherwise 0 
     """
-    if a > 0:
+    if a > 0.:
         return np.sqrt(a)
-    return 0
+    return 0.
 
 
-capped_sqrt = np.vectorize(_capped_sqrt)
